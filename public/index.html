@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Monthly Salary Calculator</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <!-- My Stuff -->
+  <link rel="stylesheet" href="style.css">
+  <script src="client.js"></script>
+</head>
+<body>
+  <header><h1>Monthly Salary Calculator</h1></header>
+  <main>
+    <section>
+      <h2>Add Employee</h2>
+      <div>
+        <input id="in-first" type="text" placeholder="first name">
+        <input id="in-last" type="text" placeholder="last name">
+        <input id="in-id" type="text" placeholder="id">
+        <input id="in-title" type="text" placeholder="title">
+        <input id="in-salary" type="text" placeholder="annual salary">
+        <button id="btn-add">Submit</button>
+      </div>
+    </section>
+    <section>
+      <h2>Employees</h2>
+      <table class="table table-striped">
+        <thead class="thead-light">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Employee ID</th>
+            <th>Title</th>
+            <th>Annual Salary</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody id="out-employees">
+          <!-- Rows added via JavaScript -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="text-right">Total Monthly Cost:</td>
+            <td colspan="2" id="out-monthly-cost"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
